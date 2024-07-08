@@ -1,0 +1,36 @@
+from django.db import models
+
+class Item(models.Model):
+    first_name = models.CharField(max_length=100, null=True)
+    middle_name = models.CharField(max_length=100, null=True)
+    last_name = models.CharField(max_length=100, null=True)
+    suffix = models.CharField(max_length=3, null=True)
+    date_of_birth = models.CharField(max_length=100, null=True)
+    sex = models.CharField(max_length=100, null=True)
+    civil_status = models.CharField(max_length=100, null=True)
+    height = models.CharField(max_length=100, null=True)
+    weight = models.CharField(max_length=100, null=True)
+    contact_number = models.CharField(max_length=15, null=True)
+    email = models.CharField(max_length=100, null=True)
+    house_no = models.CharField(max_length=50, null=True)
+    street = models.CharField(max_length=100, null=True)
+    subd = models.CharField(max_length=100, null=True)
+    barangay = models.CharField(max_length=100, null=True)
+    city = models.CharField(max_length=100, null=True)
+    province = models.CharField(max_length=100, null=True)
+    country = models.CharField(max_length=100, null=True)
+    postal = models.CharField(max_length=4, null=True)
+    father_surname = models.CharField(max_length=100, null=True)
+    father_fname = models.CharField(max_length=100, null=True)
+    father_mname = models.CharField(max_length=100, null=True)
+    father_suffix = models.CharField(max_length=3, null=True)
+    father_occu = models.CharField(max_length=100, null=True)
+    father_cn = models.CharField(max_length=100, null=True)
+    mother_surname = models.CharField(max_length=100, null=True)
+    mother_fname = models.CharField(max_length=100, null=True)
+    mother_mname = models.CharField(max_length=100, null=True)
+    mother_occu = models.CharField(max_length=100, null=True)
+    mother_cn = models.CharField(max_length=100, null=True)
+    
+    def __str__(self):
+        return self.name
